@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        } 
+        body{
+            width: 90%;
+            background-color: white;
+            margin: 15px auto;
+            box-shadow: 0 0 15px rgb(25, 1, 48);
+        }
+        .heading{
+          clear: right;
+          width: 98%;
+          background-color:hsl(229, 76%, 66%);
+          box-shadow: 0 0 10px black;
+        }
+        .heading,img{
+          float: left;
+          margin: 1em;
+        }
+        .heading,h2{
+          color: white;
+          margin: 1em;
+          text-shadow: 1.2px 1.2px rgb(25, 1, 48);
+        }
+        h4{
+            text-align: center;
+        }
+        header p{
+          float: left;
+        }
+        p{
+            padding-left: 1em;
+            color:black;
+        }
+        /*
+        header{
+            box-shadow: 0 0 15px transparent;
+            clear: left;
+        }  */
+        main{
+            height: 350px;
+            width: 66%;
+            float: left;
+            box-shadow: 0 0 10px rgb(25, 1, 48);
+            background-color: rgb(245, 241, 245);
+            margin-left: 1%; 
+        }
+        .list{
+            padding-left: 2em;
+        }
+        aside{
+            width: 30%;
+            height: 350px;
+            float: right;
+            background-color: hsl(229, 76%, 66%);
+            color: white;
+            margin-right: 1%;
+            box-shadow: 0 0 15px rgb(25, 1, 48);
+            display: block;
+            align-self: stretch;
+        }
+        
+        .wrapper {
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
+        } 
+
+        .contact { margin-bottom: 3rem; }
+
+        .contact p {
+         color: var(--foreground-secondary);
+         margin-bottom: 1rem;
+        }
+       
+          .social-link {
+            list-style-type: none;
+            display:         flex;
+            justify-content: center;
+            align-items:     center;
+            gap: 10px;
+           }
+
+  .social-link .icon-box {
+  
+    width:  45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:     center;
+    font-size: 22px;
+    box-shadow: 0 0 10px rgb(25, 1, 48);
+  }
+
+  .social-link .discord { color: hsl(235, 86%, 65%); }
+
+  .social-link .twitter { color: hsl(203, 89%, 53%); }
+
+  .social-link .facebook { color: hsl(220, 46%, 48%); }
+  
+  .social-link .youtube { color: hsl(352, 46%, 48%); }
+
+  .social-link .icon-box:hover {
+    background: var(--accent);
+    color: var(--white);
+  }
+        footer{
+            clear: both;
+        }
+
+        @media(max-width:777px){
+            main{
+              height: fit-content;
+            }
+            aside{
+              height: fit-content;
+            }
+            aside p{
+              display: none;
+              visibility: hidden;
+            }
+            .social-link {
+            list-style-type: none;
+            display:list-item;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+           }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+        <img src="assets/images/blog-2.jpg" alt="logo" width="60" height="60"> 
+          <h2>
+          Git & Github
+          </h2>
+        </div>
+        <p> 
+        <b>Git</b> & <b>Github</b> are the most important tools in a work place or development environment or in project management,
+        Almost all the companies now are using git and Github for project management, <b>Git</b> is a version control tool,
+        A version control tool system allows a developer to keep track of changes to a project,document, or a source code while <b>Github</b>
+        is a storage for project repositories, a repository contains your project in folders that are set up for version control tool.
+        <br><br>
+        </p>
+    </header>
+    <main>
+        <p> 
+        <b>Basic Git Commands: </b>
+        <div class="list">
+           <ul>
+            <li>
+                <b>git init</b>: start new repository or clone existing one </li>
+            <li>
+                <b>git add</b>: 
+            </li>
+            <li>
+                <b>git status</b>
+            </li>
+            <li>
+                <b>git commit</b>  
+            </li>
+            <li>
+                <b title="Undo changes on a document">git reset</b> 
+            </li>
+            <li>
+                <b>git log</b> 
+
+            </li>
+            <li>
+                <b>git branch</b>
+            </li>
+            <li>
+                <b>git checkout</b>  
+            </li>
+            <li>
+                <b>git merge</b>  
+            </li>
+           </ul>
+        </div>
+        </p>
+        <p>
+        <br>
+        The process of 
+        </p>
+    </main>
+    <aside>
+      
+        <div class="contact">
+
+            <h2 class="h2">Steps for hosting your website on Github</h2>
+
+            <div class="wrapper">
+            <div class="list-item">
+            <ol>
+            <li>Save Main page as index.html</li>
+            <li>put your sites into a single folder</li>
+            <li>go to your github account a create new repository</li>
+            <li>add existing files the browse your folders, you can even use drag and drop</li>
+            <li>commit changes and go to settings then pages</li>
+            <li>Select root and then Save</li>
+            </ol>
+            </div>
+            <br>
+              <ul class="social-link">
+
+                <li>
+                  <a href="#" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box youtube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+    </aside>
+  `
+    <footer>
+    <br>
+    <h4>&copy; copyright 2024 Nyakama Mahle, all rights reserved</h4>
+    <br>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
